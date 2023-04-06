@@ -1,0 +1,10 @@
+fastapi==0.95.0  # https://github.com/tiangolo/fastapi
+pydantic==1.10.7  # https://github.com/pydantic/pydantic
+uvicorn==0.21.1  # https://github.com/encode/uvicorn
+
+# Quality code
+# ------------------------------------------------------------------------------
+flake8==5.0.4  # https://github.com/PyCQA/flake8
+flake8-isort==5.0.0  # https://github.com/gforcada/flake8-isort
+coverage==6.5.0  # https://github.com/nedbat/coveragepy
+pre-commit==2.20.0  # https://github.com/pre-commit/pre-commit
