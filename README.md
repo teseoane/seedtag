@@ -6,10 +6,10 @@ Seedtag Codetest 2: Backend Engineer
 
 ### Build the image
 ```bash
-docker build -t python/seedtag:version1.0 .
+docker-compose build
 ```
 
-### Run a container based on the image
+### Run the container
 ```bash
-docker run -d --name seedtag -p 8888:8888 python/seedtag:version1.0
+docker-compose up
 ```
