@@ -3,7 +3,7 @@ from typing import List
 
 import pytest
 
-from app.models import Coordinates, Enemies, ProtocolEnum, ScanData
+from app.schemas import Coordinates, Enemies, ProtocolEnum, ScanData
 from app.utils import RadarSystem
 
 BASE_COORD = Coordinates(x=0, y=0)

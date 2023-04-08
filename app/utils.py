@@ -1,7 +1,7 @@
 from math import sqrt
 from typing import List
 
-from app.models import Coordinates, ScanData
+from app.schemas import Coordinates, ScanData
 
 
 class RadarSystem:
