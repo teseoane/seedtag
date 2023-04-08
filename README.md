@@ -26,6 +26,7 @@ http://localhost:8888/docs
 
 
 ## Notes
+All the test cases were added to the `test_main.py`.
 I wanted to keep the project as simple as possible:
 
 ```
