@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
 from app.schemas import Coordinates, RadarRequest
-from app.utils import RadarSystem
+from app.services import RadarSystem
 
 app = FastAPI()
 

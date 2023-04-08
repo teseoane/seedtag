@@ -36,8 +36,8 @@ I wanted to keep the project as simple as possible:
 │   ├── schemas.py        # "schemas" module containing all the pydantic models used by the application
 │   ├── tests
 |   │   ├── test_main.py     # "test_main" module containing integration tests for the '/radar' endpoint
-|   │   └── test_utils.py    # "test_utils" module containing unit tests for the RadarSystem class
-│   └── utils.py         # "utils" module containing the definition of the RadarSystem class, used by the application
+|   │   └── test_services.py    # "test_services" module containing unit tests for the RadarSystem class
+│   └── services.py         # "services" module containing the definition of the RadarSystem class
 ├── docker-compose       # Configuration file, which allows running multiple containers as a service
 ├── Dockerfile           # Dockerfile used to build the application image
 └── requirements.txt     # List of Python dependencies required by the application, used by pip to install them
