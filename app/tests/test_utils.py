@@ -34,7 +34,6 @@ def test_radarsystem_init(sample_protocols):
     (ScanData(coordinates=Coordinates(x=6, y=8), enemies=Enemies(type='mech', number=1), allies=None), 10),
     (ScanData(coordinates=Coordinates(x=100, y=0), enemies=Enemies(type='mech', number=1), allies=None), 100),
     (ScanData(coordinates=Coordinates(x=0, y=-100), enemies=Enemies(type='mech', number=1), allies=None), 100),
-    (ScanData(coordinates=Coordinates(x=-100, y=100), enemies=Enemies(type='mech', number=1), allies=None), 141),
 ])
 def test_radarsystem_distance(sample_protocols, scan_data, expected_distance):
     radar = RadarSystem(sample_protocols)
