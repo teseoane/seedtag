@@ -14,6 +14,12 @@ class DistanceFilter(Filter):
         self.max_distance = max_distance
 
     def distance(self, target: ScanData) -> float:
+        """
+        Calculates the Euclidean distance of a target from the origin (0, 0).
+
+        Args:
+            target (ScanData): The target containing the coordinates to calculate the distance.
+        """
         return sqrt(target.coordinates.x ** 2 + target.coordinates.y ** 2)
 
     def is_valid(self, target: ScanData) -> bool:
@@ -56,7 +62,31 @@ class FurthestEnemiesSort(SortingMethod):
 
 
 class RadarSystem:
+    """
+    RadarSystem class is responsible for applying filtering and sorting protocols
+    to a list of ScanData objects, in order to find the next target based on the
+    given protocols.
+    """
+
     def __init__(self, protocols: List[str]) -> None:
+        """
+        Initializes the RadarSystem with the provided filtering and sorting protocols.
+
+        Args:
+            protocols (List[str]): A list of protocol strings that define the
+                filtering and sorting methods for the RadarSystem.
+                Supported protocols are:
+                    'avoid-mech'
+                    'prioritize-mech'
+                    'avoid-crossfire'
+                    'assist-allies'
+                    'closest-enemies'
+                    'furthest-enemies'
+
+        Creates:
+            filters (List[Filter]): A list of Filter objects based on the given protocols.
+            sorting_methods (List[SortingMethod]): A list of SortingMethod objects based on the given protocols.
+        """
         self.filters = [DistanceFilter(100)]
         self.sorting_methods = []
 
