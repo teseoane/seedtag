@@ -53,7 +53,7 @@ schemas and routers, and divided the requirements into base, dev, and prod like:
 │   │   ├── constants.py
 │   │   ├── router.py
 │   │   ├── schemas.py
-│   │   └── service.py
+│   │   └── services.py
 │   ├── tests
 │   │   ├── radar
 │   │   │   ├── test_main.py

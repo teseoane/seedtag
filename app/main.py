@@ -31,4 +31,5 @@ async def radar(request: RadarRequest) -> Coordinates:
         Coordinates: The coordinates of the next point to attack.
     """
     radar_system = RadarSystem(request.protocols)
-    return radar_system.find_next_target(request.scan)
+    next_target = radar_system.find_next_target(request.scan)
+    return next_target.coordinates
