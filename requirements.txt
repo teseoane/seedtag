@@ -1,6 +1,6 @@
 fastapi==0.95.0  # https://github.com/tiangolo/fastapi
 pydantic==1.10.7  # https://github.com/pydantic/pydantic
-uvicorn==0.21.1  # https://github.com/encode/uvicorn
+uvicorn==0.22.0  # https://github.com/encode/uvicorn
 
 # Quality code
 # ------------------------------------------------------------------------------
